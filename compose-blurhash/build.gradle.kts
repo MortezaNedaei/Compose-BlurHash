@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.mone.blurhash.compose"
+    namespace = "com.mortezanedaei.blurhash.compose"
     compileSdk = 33
 
     defaultConfig {
@@ -30,6 +30,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = "19"
+    }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
     }
     buildFeatures {
         compose = true

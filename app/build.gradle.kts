@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mone.blurhash"
+    namespace = "com.mortezanedaei.blurhash"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.mone.blurhash"
+        applicationId = "com.mortezanedaei.blurhash"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

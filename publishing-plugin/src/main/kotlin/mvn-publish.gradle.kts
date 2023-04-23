@@ -20,6 +20,7 @@ val licenseUrl = project.findProperty("LICENCE_URL") as String
 
 val developerId = project.findProperty("DEVELOPER_ID") as String
 val developerName = project.findProperty("DEVELOPER_NAME") as String
+val developerEmail = project.findProperty("DEVELOPER_EMAIL") as String
 
 val scmConnection = project.findProperty("SCM_CONNECTION") as String
 val scmDevConnection = project.findProperty("SCM_DEV_CONNECTION") as String
@@ -50,6 +51,7 @@ publishing {
                     developer {
                         id.set(developerId)
                         name.set(developerName)
+                        email.set(developerEmail)
                     }
                 }
                 scm {
