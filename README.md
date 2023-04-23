@@ -4,5 +4,5 @@ A library based on BlurHash system to add blur like effects for images in androi
 
 ## Usage
 ```
-implementation 'io.mortezanedaei:compose-blurhash:1.0.0'
+implementation 'io.mortezanedaei:blurhash-compose:1.0.0'
 ```

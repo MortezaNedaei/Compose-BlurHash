@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "compose-blurhash"
+rootProject.name = "blurhash-compose"
 include(":app")
-include(":compose-blurhash")
+include(":blurhash-compose")
 includeBuild("publishing-plugin")

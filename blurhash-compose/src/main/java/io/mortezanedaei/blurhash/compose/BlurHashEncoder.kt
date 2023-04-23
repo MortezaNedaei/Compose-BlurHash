@@ -12,7 +12,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.round
 
-object BlurHashEncoder {
+internal object BlurHashEncoder {
 
     private const val COMPONENT_X = 8
     private const val COMPONENT_Y = 8
@@ -82,7 +82,7 @@ object BlurHashEncoder {
      * @param bitmap the image
      * @return the blur hash
      */
-    fun encode(bitmap: Bitmap): String {
+    internal fun encode(bitmap: Bitmap): String {
         return encode(bitmap, COMPONENT_X, COMPONENT_Y)
     }
 

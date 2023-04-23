@@ -66,7 +66,7 @@ fun AsyncBlurImage(
 }
 
 @Composable
-fun blurHashProvider(
+private fun blurHashProvider(
     imageUrl: String,
     context: Context
 ): String {

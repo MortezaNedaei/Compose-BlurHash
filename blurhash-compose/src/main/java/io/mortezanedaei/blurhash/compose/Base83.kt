@@ -11,7 +11,7 @@ internal object Base83 {
         '-', '.', ':', ';', '=', '?', '@', '[', ']', '^', '_', '{', '|', '}', '~'
     )
 
-    fun encode(value: Int, length: Int, buffer: CharArray, offset: Int) {
+    internal fun encode(value: Int, length: Int, buffer: CharArray, offset: Int) {
         var exp = 1
         var i = 1
         while (i <= length) {
@@ -22,7 +22,7 @@ internal object Base83 {
         }
     }
 
-    fun decode(str: String, from: Int = 0, to: Int = str.length): Int {
+    internal fun decode(str: String, from: Int = 0, to: Int = str.length): Int {
         var result = 0
         for (i in from until to) {
             val index = CHAR_MAP.indexOf(str[i])

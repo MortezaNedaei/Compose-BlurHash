@@ -14,7 +14,7 @@ import kotlin.math.cos
 import kotlin.math.pow
 import kotlin.math.withSign
 
-object BlurHashDecoder {
+internal object BlurHashDecoder {
 
     // cache Math.cos() calculations to improve performance.
     // The number of calculations can be huge for many bitmaps: width * height * numCompX * numCompY * 2 * nBitmaps
@@ -27,7 +27,7 @@ object BlurHashDecoder {
      * The cache is not big, but will increase when many image sizes are used,
      * if the app needs memory it is recommended to clear it.
      */
-    fun clearCache() {
+    private fun clearCache() {
         cacheCosinesX.clear()
         cacheCosinesY.clear()
     }
@@ -40,7 +40,7 @@ object BlurHashDecoder {
      *                 By default it is true.
      */
     @Suppress("ReturnCount")
-    fun decode(
+    internal fun decode(
         blurHash: String?,
         width: Int,
         height: Int,
