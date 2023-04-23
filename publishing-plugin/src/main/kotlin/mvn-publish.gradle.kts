@@ -3,8 +3,8 @@ plugins {
     signing
 }
 
-val mavenCentralUrl = uri("https://oss.sonatype.org/service/local/staging/deploy/maven2/")
-val mavenSnapshotUrl = uri("https://oss.sonatype.org/content/repositories/snapshots/")
+val mavenCentralUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
+val mavenSnapshotUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
 val snapshotIdentifier = "-SNAPSHOT"
 
 val libVersionName = project.findProperty("VERSION_NAME") as String
