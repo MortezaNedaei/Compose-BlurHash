@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.mortezanedaei.blurhash.compose"
+    namespace = "io.mortezanedaei.blurhash.compose"
     compileSdk = 33
 
     defaultConfig {
