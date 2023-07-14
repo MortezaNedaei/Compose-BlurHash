@@ -20,6 +20,19 @@ import coil.request.ImageRequest
 private const val DEFAULT_HASHED_BITMAP_WIDTH = 4
 private const val DEFAULT_HASHED_BITMAP_HEIGHT = 3
 
+/**
+ * This function is used to load an image asynchronously and blur it using BlurHash.
+ * @param imageUrl The URL of the image to be loaded.
+ * @param modifier The modifier to be applied to the image.
+ * @param imageModifier The modifier to be applied to the image.
+ * @param contentDescription The content description to be applied to the image.
+ * @param contentScale The content scale to be applied to the image.
+ * @param isCrossFadeRequired Whether cross-fade is required or not.
+ * @param onImageLoadSuccess The callback to be called when the image is loaded successfully.
+ * @param onImageLoadFailure The callback to be called when the image is failed to load.
+ * @see AsyncImage
+ */
+@Suppress("LongParameterList")
 @ExperimentalCoilApi
 @Composable
 fun AsyncBlurImage(

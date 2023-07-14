@@ -1,16 +1,17 @@
 [versions]
-com-android-application = "8.0.0"
+com-android-application = "8.0.1"
 org-jetbrains-kotlin-android = "1.8.20"
-core-ktx = "1.10.0"
+org-jetbrains-dokka = "1.8.20"
+core-ktx = "1.10.1"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 lifecycle-runtime-ktx = "2.6.1"
-activity-compose = "1.7.0"
-compose-bom = "2023.04.00"
-com-android-library = "8.0.0"
+activity-compose = "1.7.2"
+compose-bom = "2023.06.01"
+com-android-library = "8.0.1"
 appcompat = "1.6.1"
-material = "1.8.0"
+material = "1.9.0"
 coroutines = "1.7.0-RC"
 coil = "2.3.0"
 
@@ -38,6 +39,7 @@ coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 com-android-application = { id = "com.android.application", version.ref = "com-android-application" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 com-android-library = { id = "com.android.library", version.ref = "com-android-library" }
+org-jetbrains-dokka = { id = "org.jetbrains.dokka", version.ref = "org-jetbrains-dokka" }
 
 [bundles]
 
